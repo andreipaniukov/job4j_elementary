@@ -16,10 +16,10 @@ class SqAreaTest {
     }
 
     @Test
-    void whanP10K1dot5Square6() {
-        int p = 10;
-        double k = 1.5;
-        double expected = 6;
+    void whanP4K1Square1() {
+        int p = 4;
+        double k = 1;
+        double expected = 1;
         double out = SqArea.square(p, k);
         assertThat(out).isEqualTo(expected, withPrecision(0.01));
     }
