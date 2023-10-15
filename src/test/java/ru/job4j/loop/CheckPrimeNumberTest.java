@@ -26,4 +26,11 @@ class CheckPrimeNumberTest {
         boolean result = CheckPrimeNumber.check(number);
         assertThat(result).isFalse();
     }
+
+    @Test
+    void when11() {
+        int number = 11;
+        boolean result = CheckPrimeNumber.check(number);
+        assertThat(result).isTrue();
+    }
 }
