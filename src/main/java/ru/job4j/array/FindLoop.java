@@ -14,8 +14,8 @@ public class FindLoop {
 
     public static void main(String[] args) {
         int[] array = new int[]{0, 1, 4, 9, 16};
-        int num = 9;
-        int result = indexOf(array, num);
+        int number = 9;
+        int result = indexOf(array, number);
         System.out.println(result);
     }
 }
