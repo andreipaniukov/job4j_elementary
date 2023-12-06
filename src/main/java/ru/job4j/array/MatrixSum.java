@@ -1,0 +1,24 @@
+package ru.job4j.array;
+
+public class MatrixSum {
+    public static int sum(int[][] array) {
+        int rsl = 0;
+        for (int row = 0; row < array.length; row++) {
+            for (int cell = 0; cell < array[row].length; cell++) {
+                int val = array[row][cell];
+                rsl += val;
+            }
+        }
+        return rsl;
+    }
+
+    public static void main(String[] args) {
+        int[][] numbers = {
+                {1, 2, 3},
+                {4, 5},
+                {6, 7, 8, 9}
+        };
+        int result = MatrixSum.sum(numbers);
+        System.out.println(result);
+    }
+}
